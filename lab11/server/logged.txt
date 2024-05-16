@@ -1,0 +1,8 @@
+<Request 'http://127.0.0.1:5000/BEK_logger?a=5' [GET]><Request 'http://127.0.0.1:5000/BEK_logger?a=5&b=5' [GET]><Request 'http://127.0.0.1:5000/BEK_logger?a=5&b=5' [GET]>
+
+<Request 'http://127.0.0.1:5000/BEK_logger?a=5&b=5' [GET]>
+
+<Request 'http://127.0.0.1:5000/BEK_logger?a=5&b=5' [GET]>
+
+<Request 'http://127.0.0.1:5000/BEK_logger?a=5&b=5' [GET]>
+
