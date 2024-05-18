@@ -1,14 +1,22 @@
 from flask import Flask, request
+from werkzeug.middleware.proxy_fix import ProxyFix
+
 
 app = Flask(__name__)
+app.wsgi_app = ProxyFix(
+    app.wsgi_app, x_for=1, x_proto=1
+)
 
 
-@app.route("/BEK_logger", methods=['GET', 'POST'])
+@app.route("/", methods=['GET', 'POST'])
 def bek_logger():
     with open('logged.txt', 'a') as file:
-        file.write(str(request.headers))
-        file.write('\n')
-        file.write(str(request.get_data()))
+        file.write(request.get_data().decode('ascii'))
         file.write('\n\n')
 
     return "OK"
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0')
+
