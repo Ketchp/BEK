@@ -13,3 +13,13 @@ Piaty skript zbiera cookies užívatelov a posiela ich na oracle VM server, sour
 Pre pridanie príspevku za iného užívateľa stačí pozmeniť len cookie header v [new_post.sh](), za ukradnutý cookie. Netreba dokonca meniť ani `profile_user_id` v `--data-raw` alebo `Referer` header kde je tiež id užívateľa.
 
 Pre pridanie užívateľa do skupiny povolíme `Preserve log` `developer-tools: Network` a odchytíme request pre pridanie nášho užívatela. Výsledny request je vykopírovaný do [page_like.sh](injection/page_like.sh). Opäť vieme pridať like za iného užívatela len tým že zmeníme cookie header v requeste.
+
+# Dodatok
+
+Priamo skopírované POST requesty pre add_post/page_like sú v [new_post_original.sh](injection/new_post_original.sh) a [page_like_original.sh](injection/page_like_original.sh).
+
+Requesty so zmenenými cookies sú v [new_post_stolen.sh](injection/new_post_stolen.sh) a [page_like_stolen.sh](injection/page_like_stolen.sh).
+
+Vytvoril som aj skript, ktorý automaticky pošle príspevok a dá like na stránku pre všetky odchytené cookies: [like_and_post.py](injection/like_and_post.py).
+
+Moja skupina `HackGroup` má celkovo 20 likov :D

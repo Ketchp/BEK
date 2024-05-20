@@ -4,7 +4,7 @@ curl 'http://boura.fit.cvut.cz/fakebook/static/ajax.php' \
   -H 'Cache-Control: no-cache' \
   -H 'Connection: keep-alive' \
   -H 'Content-Type: application/x-www-form-urlencoded' \
-  -H 'Cookie: _ga_54R78HKGNS=GS1.1.1715962268.46.1.1715962435.0.0.0; _ga_VK215KDBLX=GS1.1.1696198210.1.1.1696198236.0.0.0; _ga_ZFQFJHB11G=GS1.1.1697533661.1.1.1697534196.0.0.0; _ga=GA1.1.671850115.1697533661; _ga_HGNKGCF00N=GS1.1.1707401940.8.0.1707401940.0.0.0; _ga_8X13DMVCT6=GS1.1.1707697342.3.1.1707697392.0.0.0; _ga_7SVXBV2B5R=GS1.1.1714475332.5.0.1714475332.0.0.0; _gcl_au=1.1.788427660.1710255332; _ga_ZPWF39NQCW=GS1.1.1710255332.1.1.1710255353.0.0.0; PHPSESSID=7s26kdmjognj3dcb68tv3m9qjf; cored889visit=1715006220; cored889user_id=12; cored889user_hash=17ef7c5e8e9d1b601f4adc073df09666170945cc0da0930315; cored889last_login=1716039324' \
+  -H 'Cookie: _ga_54R78HKGNS=GS1.1.1712999948.2.0.1712999948.0.0.0; _ga=GA1.1.977767694.1712485344; PHPSESSID=8j50hpm43emulgaf0k2m4eo123; cored889visit=1716223691; cored889user_id=33; cored889user_hash=29733578d23454a4fb9f5514b1fb6516feb706fe5d7e87925e; cored889last_login=1716223740' \
   -H 'Origin: http://boura.fit.cvut.cz' \
   -H 'Pragma: no-cache' \
   -H 'Referer: http://boura.fit.cvut.cz/fakebook/index.php?do=/pages/2/' \
