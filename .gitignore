@@ -1,3 +1,11 @@
 .idea
 .venv
 __pycache__
+*.zip
+
+lab02
+lab05
+lab08/app_download
+lab08/*.php
+lab08/.htaccess
+lab08/favicon.ico
